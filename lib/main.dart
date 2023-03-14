@@ -14,12 +14,16 @@ class MyApp extends StatelessWidget {
           title: Text('Text field widget'),
         ),
         body: Material(
-          child: Center(
-            child: TextField(
-              onSubmitted: (a){},
-              decoration: InputDecoration(
-                labelText: "Name",
-                hintText:"enter your name"
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Center(
+              child: TextField(
+                keyboardType: TextInputType.number,
+                onSubmitted: (a){},
+                decoration: InputDecoration(
+                  labelText: "Name",
+                  hintText:"enter your name"
+                ),
               ),
             ),
           ),
