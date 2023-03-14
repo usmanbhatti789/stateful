@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'custom_widgets/custome_text_field.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -14,23 +16,10 @@ class MyApp extends StatelessWidget {
           title: Text('Text field widget'),
         ),
         body: Material(
-          child: Padding(
-            padding: EdgeInsets.all(20),
-            child: Center(
-              child: TextField(
-                keyboardType: TextInputType.number,
-                onSubmitted: (a){},
-                decoration: InputDecoration(
-                  labelText: "Name",
-                  //meri jan
-                  hintText:"enter your name"
-                ),
-              ),
-            ),
-          ),
+          child:CustomTextField(),
         ),
         floatingActionButton: FloatingActionButton(
-            onPressed: (){},
+          onPressed: () {},
         ),
       ),
     );
