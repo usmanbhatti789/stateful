@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
                 onSubmitted: (a){},
                 decoration: InputDecoration(
                   labelText: "Name",
+                  //meri jan
                   hintText:"enter your name"
                 ),
               ),
